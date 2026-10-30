@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personality Quiz</title>
+    <link rel="icon" type="image/x-icon" href="/img/ideas.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href ="./css/style.css">
+</head>
+<body>
+    <h1 class="text-center mt-4">What Type of College Student Are You?</h1>
+    
+    <!-- Start quiz element -->
+    <div class="container d-flex justify-content-center" id="question-1">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">How do you usually prepare for an exam?</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">I start studying a week in advance.</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">I cram everything the night before.</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">I organize a study group with friends.</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">I study a little and hope for the best.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <!-- End quiz element -->
+
+<!-- Question 2 -->
+<div class="container d-flex justify-content-center" id="question-2">
+  <div class="card my-4 p-4 question-block" style="width: 75%;">
+
+    <h4 class="mb-3">What do you usually do during your free time?</h4>
+
+    <div class="row g-2">
+
+      <!-- Answer A -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Get ahead on homework or study.</button>
+      </div>
+
+      <!-- Answer B -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Catch up on assignments I forgot about.</button>
+      </div>
+
+      <!-- Answer C -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Hang out with friends or go out.</button>
+      </div>
+
+      <!-- Answer D -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Relax, watch Netflix, or take a nap.</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Question 3 -->
+<div class="container d-flex justify-content-center" id="question-3">
+  <div class="card my-4 p-4 question-block" style="width: 75%;">
+
+    <h4 class="mb-3">How do you handle a group project?</h4>
+
+    <div class="row g-2">
+
+      <!-- Answer A -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">I take charge and organize everything.</button>
+      </div>
+
+      <!-- Answer B -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">I wait until the deadline gets close to do my part.</button>
+      </div>
+
+      <!-- Answer C -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">I enjoy collaborating and talking with everyone.</button>
+      </div>
+
+      <!-- Answer D -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">I go with the flow and do whatever is needed.</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Question 4 -->
+<div class="container d-flex justify-content-center" id="question-4">
+  <div class="card my-4 p-4 question-block" style="width: 75%;">
+
+    <h4 class="mb-3">What best describes your college experience?</h4>
+
+    <div class="row g-2">
+
+      <!-- Answer A -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Focused on grades, goals, and my future career.</button>
+      </div>
+
+      <!-- Answer B -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">A little chaotic, but I always figure things out.</button>
+      </div>
+
+      <!-- Answer C -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Making memories, meeting people, and having fun.</button>
+      </div>
+
+      <!-- Answer D -->
+      <div class="col-6">
+        <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Taking things one day at a time and enjoying life.</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Add more quiz elements here -->
+
+
+
+    <div class="container d-flex justify-content-center">
+      <button id="show-result" class="btn btn-success my-4">Show Results</button>
+    </div>    
+    <!-- Output the result here -->
+    <div class="container d-flex justify-content-center">
+      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
+        <h3>Your Result:</h3>
+        <p id="result-text"></p>
+      </div>
+    </div>
+    
+    <!-- Connect to your script file here -->
+     <script src = "./js/script.js"></script>
+</body>
+</html>
